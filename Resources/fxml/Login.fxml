@@ -28,11 +28,6 @@
                </font>
             </Label>
             <Button fx:id="Lbtn" layoutX="241.0" layoutY="257.0" mnemonicParsing="false" onAction="#Login" prefHeight="38.0" prefWidth="92.0" text="Login" />
-            <Hyperlink fx:id="emplink" layoutX="33.0" layoutY="262.0" onAction="#goToLoginEmployee" text="Login as Employee" underline="true">
-               <font>
-                  <Font name="Cambria" size="16.0" />
-               </font>
-            </Hyperlink>
             <PasswordField fx:id="ptxt" layoutX="33.0" layoutY="210.0" prefHeight="31.0" prefWidth="300.0" promptText="Enter Password" />
          </children>
       </AnchorPane>

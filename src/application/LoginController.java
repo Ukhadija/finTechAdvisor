@@ -13,7 +13,6 @@ import java.io.*;
 import java.sql.SQLException;
 
 
-
 public class LoginController {
 	Main m = new Main();
 
@@ -43,6 +42,10 @@ public class LoginController {
     	m.changeScenewithParameter(s, "resources/fxml/UserAccount.fxml", cus);
     }*/
     
+    void goToUserAccount(Stage s)throws IOException {
+    	m.changeScene(s, "resources/fxml/UserAccount.fxml");
+    }
+    
 
     @FXML
     void Login(ActionEvent event)throws IOException, SQLException {
@@ -54,6 +57,7 @@ public class LoginController {
     	if(username.isEmpty()|| password.isEmpty()) {
     		System.out.println ("enter values");
     	}
+    	this.goToUserAccount(s);
     	/*
     	else {
     		Post_Office po = new Post_Office();
