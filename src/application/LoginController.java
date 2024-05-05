@@ -10,7 +10,6 @@ import javafx.event.ActionEvent;
 import javafx.scene.Node;
 import javafx.stage.Stage;
 import java.io.*;
-import java.sql.SQLException;
 
 
 public class LoginController {
@@ -48,7 +47,7 @@ public class LoginController {
     
 
     @FXML
-    void Login(ActionEvent event)throws IOException, SQLException {
+    void Login(ActionEvent event)throws IOException{
     	System.out.println("Login button clicked");
     	Stage s = (Stage) ((Node)event.getSource()).getScene().getWindow();
     	
