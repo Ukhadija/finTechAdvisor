@@ -1,7 +1,5 @@
 package finTechAdvisor;
 
-import java.sql.SQLException;
-import java.sql.Statement;
 import java.util.ArrayList;
 public class Bank {
 	private String bankName;
@@ -9,7 +7,7 @@ public class Bank {
 	
 	Bank(String name){
 		bankName = name;
-		MySqlHandler sql = new MySqlHandler();
+		/*MySqlHandler sql = new MySqlHandler();
 		Statement stmt = sql.getStmt();
 		
 		//execute query
@@ -21,6 +19,7 @@ public class Bank {
 		//	 TODO Auto-generated catch block
 			e.printStackTrace();
 		} //execute the insertion
+		*/
 	}
 	
 	public String getName() {

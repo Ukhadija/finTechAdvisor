@@ -1,5 +1,4 @@
 package finTechAdvisor;
-import java.sql.*;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.Date;
@@ -18,7 +17,8 @@ public class Customer extends User{
 		
 	}
 	Customer(String name, String address, String phone, String email,
-			String cnic, String Username, String pass, BankAccount Bacc) throws SQLException{
+			String cnic, String Username, String pass, BankAccount Bacc)
+	{
 		super(name, address, phone, email,cnic, Username, pass); //user added to database
 	
 		String P = "C";
@@ -28,7 +28,7 @@ public class Customer extends User{
 		this.setCustomerID(P);
 		
 		//add to database
-		
+		/*
 		MySqlHandler sql = new MySqlHandler();
 		Statement stmt = sql.getStmt();
 		
@@ -46,6 +46,7 @@ public class Customer extends User{
 		System.out.println("Insert into Customer "
 				+ "	VALUES ('" + P +"','" + Username +"','" + Bacc.getAccountNo() +  " );");
 		stmt.executeUpdate(query); //execute the insertion
+		*/
 		
 		
 	}

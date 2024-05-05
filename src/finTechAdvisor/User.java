@@ -1,7 +1,4 @@
 package finTechAdvisor;
-import java.sql.SQLException;
-import java.sql.Statement;
-
 public abstract class User {
 	private String Name;
 	private String Address;
@@ -26,7 +23,7 @@ public abstract class User {
 		this.setAcc(user.getAcc());
 	}
 	
-	public User(String name, String address, String phone, String email, String cnic, String Username, String pass) throws SQLException
+	public User(String name, String address, String phone, String email, String cnic, String Username, String pass) 
 	{
 		setName(name);
 		setAddress(address);
@@ -35,7 +32,7 @@ public abstract class User {
 		setCNIC(cnic); 
 		setAcc(new Account(Username, pass));
 		
-		MySqlHandler sql = new MySqlHandler();
+		/*MySqlHandler sql = new MySqlHandler();
 		Statement stmt = sql.getStmt();
 		
 		//execute query
@@ -45,6 +42,7 @@ public abstract class User {
 		System.out.println(query);
 		
 		stmt.executeUpdate(query); //execute the insertion
+		*/
 	}
 	
 	public User(String name, String address, String phone, String email, String cnic, Account a)

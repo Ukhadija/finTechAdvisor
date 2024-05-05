@@ -1,9 +1,4 @@
 package finTechAdvisor;
-
-import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -14,7 +9,7 @@ public class FinTechAdvisor {
 	private ArrayList<Customer>  Customers;
 	private ArrayList<Bank> banks;
 	
-	public FinTechAdvisor() throws SQLException
+	public FinTechAdvisor() 
 	{
 		
 		Customers = new ArrayList<Customer>();
@@ -32,6 +27,7 @@ public class FinTechAdvisor {
 	public Customer LoginCustomer(String Username, String Password)
 	{
 		System.out.println(Username+" "+ Password);
+		/*
 		MySqlHandler sql = new MySqlHandler();
 		Connection conn = sql.getCon();
 		Statement stmt = sql.getStmt();
@@ -75,11 +71,13 @@ public class FinTechAdvisor {
 				}
 			}
 			conn.close();
+			
 		
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		*/
 		
 		System.out.println("here null");
 		return null;
@@ -91,7 +89,7 @@ public class FinTechAdvisor {
 		
 	}
 	public void CreateAccount(String name, String address, String email, String phone,
-			String cnic, String user, String pass ) throws SQLException
+			String cnic, String user, String pass ) 
 	{
 		
 		Account acc =  new Account(user, pass);
