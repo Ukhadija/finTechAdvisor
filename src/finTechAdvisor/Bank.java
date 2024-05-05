@@ -1,7 +1,6 @@
 package finTechAdvisor;
 
-import java.sql.SQLException;
-import java.sql.Statement;
+
 import java.util.ArrayList;
 public class Bank {
 	private String bankName;
@@ -9,18 +8,19 @@ public class Bank {
 	
 	Bank(String name){
 		bankName = name;
-		MySqlHandler sql = new MySqlHandler();
-		Statement stmt = sql.getStmt();
-		
+//		MySqlHandler sql = new MySqlHandler();
+//		Statement stmt = sql.getStmt();
+//		
 		//execute query
-		String query = "Insert into Bank(BankName) "
-				+ "	VALUES ('" + bankName + "' );";
-		try {
-			int row = stmt.executeUpdate(query);
-		} catch (SQLException e) {
-		//	 TODO Auto-generated catch block
-			e.printStackTrace();
-		} //execute the insertion
+//		String query = "Insert into Bank(BankName) "
+//				+ "	VALUES ('" + bankName + "' );";
+//		try {
+//			int row = stmt.executeUpdate(query);
+//		} catch (SQLException e) {
+//		//	 TODO Auto-generated catch block
+//			e.printStackTrace();
+//		} //execute the insertion
+		
 	}
 	
 	public String getName() {

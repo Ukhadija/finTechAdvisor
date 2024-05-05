@@ -1,10 +1,13 @@
 package application;
 
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.scene.control.Button;
 
 import javafx.event.ActionEvent;
 import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.stage.Stage;
 import java.io.*;
 
@@ -95,11 +98,18 @@ public class UserAccountController {
 
     @FXML
     void goToFinancialGoals(ActionEvent event) throws IOException {
-    	System.out.println("Order Supplies link clicked");
+//        FXMLLoader loader = new FXMLLoader(getClass().getResource("resources/fxml/FinancialGoals.fxml"));
+//        Parent root = loader.load();
+//        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+//        stage.setScene(new Scene(root));
+//        System.out.println("Back");
+        
+    	System.out.println("link clicked");
     	Stage s = (Stage) ((Node)event.getSource()).getScene().getWindow();
     	m.changeScene(s, "resources/fxml/FinancialGoals.fxml");
-    	//change fjriojgior
+
     }
+
 
     @FXML
     void goToCustomerService(ActionEvent event) throws IOException {

@@ -6,6 +6,7 @@ import javafx.fxml.FXMLLoader;
 import java.io.FileInputStream;
 import java.io.IOException;
 
+import finTechAdvisor.FinanicialGoals;
 import javafx.application.Application;
 import javafx.stage.Stage;
 import javafx.scene.Scene;
@@ -14,6 +15,7 @@ import javafx.scene.layout.AnchorPane;
 
 
 public class Main extends Application {
+	
 	Stage stage;
 	FXMLLoader loader = new FXMLLoader();
 	@Override
@@ -61,4 +63,8 @@ public class Main extends Application {
 	}
 	*/
 }
+
+
+
+
 

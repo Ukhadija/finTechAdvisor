@@ -1,10 +1,10 @@
 package finTechAdvisor;
 
 
-import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
+//import java.sql.Connection;
+//import java.sql.ResultSet;
+//import java.sql.SQLException;
+//import java.sql.Statement;
 import java.util.*;
 import java.util.Date;
 
@@ -19,7 +19,7 @@ public class BankAccount {
 	//private ArrayList<Log> transHistory;
 	
 	//constructor
-	BankAccount(  String branch, String BankName) throws SQLException
+	BankAccount(  String branch, String BankName) 
 	{
 		Random rand = new Random();
 		int min =1;
@@ -32,16 +32,16 @@ public class BankAccount {
 		this.branch = branch;
 		this.accountNo = accountNo;
 		
-		MySqlHandler sql = new MySqlHandler();
-		Statement stmt = sql.getStmt();
-		
-		//execute query
-		String query = "Insert into BankAccount "
-				+ "	VALUES ('" + accountNo +"'," + balance +",'" + branch+"','" + BankName+  "' );";
-	
-			int row = stmt.executeUpdate(query);
+//		MySqlHandler sql = new MySqlHandler();
+//		Statement stmt = sql.getStmt();
+//		
+//		//execute query
+//		String query = "Insert into BankAccount "
+//				+ "	VALUES ('" + accountNo +"'," + balance +",'" + branch+"','" + BankName+  "' );";
+//	
+//			int row = stmt.executeUpdate(query);
+//	}
 	}
-	
 	//getter setter
 	double getBalance() {
 		return this.balance;
