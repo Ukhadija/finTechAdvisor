@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.InsuranceOptionController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="117.0" layoutY="95.0" prefHeight="63.0" prefWidth="267.0" text="Insurance Options" textAlignment="CENTER">
+         <font>
+            <Font name="Cambria Bold" size="24.0" />
+         </font>
+      </Label>
+      <HBox prefHeight="87.0" prefWidth="500.0" style="-fx-background-color: #12C1E0;">
+         <children>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="63.0" fitWidth="152.0" layoutX="22.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="file:/C:/Users/Zinoor%20Fatima/eclipse-workspace/FinTechAdvise%20Java/finTechAdvisor/Resources/images/logo.png" />
+                     </image>
+                  </ImageView>
+               </children></AnchorPane>
+            <AnchorPane prefHeight="87.0" prefWidth="112.0" />
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="backbtn" layoutX="82.0" layoutY="33.0" mnemonicParsing="false" onAction="#goToHome" prefHeight="22.0" prefWidth="91.0" text="Back">
+                     <font>
+                        <Font name="Cambria" size="18.0" />
+                     </font>
+                  </Button>
+               </children></AnchorPane>
+         </children>
+      </HBox>
+      <AnchorPane layoutX="54.0" layoutY="175.0" prefHeight="266.0" prefWidth="186.0" style="-fx-background-color: #fbeae6;">
+         <children>
+            <ImageView fx:id="Image1" fitHeight="95.0" fitWidth="158.0" layoutX="16.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="name1" alignment="CENTER" contentDisplay="CENTER" layoutX="14.0" layoutY="109.0" prefHeight="34.0" prefWidth="152.0" text="Insurance Option 1">
+               <font>
+                  <Font name="Cambria" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="desc1" alignment="TOP_LEFT" layoutX="15.0" layoutY="143.0" prefHeight="63.0" prefWidth="158.0" text="Description: fyedg fcdgyh" wrapText="true">
+               <font>
+                  <Font name="Cambria" size="15.0" />
+               </font>
+            </Label>
+            <Button fx:id="cbtn" layoutX="36.0" layoutY="218.0" mnemonicParsing="false" onAction="#goToHome" prefHeight="34.0" prefWidth="117.0" style="-fx-background-color: #3A808C;" text="Choose" textFill="WHITE">
+               <font>
+                  <Font name="Cambria" size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="285.0" layoutY="175.0" prefHeight="266.0" prefWidth="186.0" style="-fx-background-color: #fbeae6;">
+         <children>
+            <ImageView fx:id="Image2" fitHeight="95.0" fitWidth="158.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="name2" alignment="CENTER" contentDisplay="CENTER" layoutX="14.0" layoutY="109.0" prefHeight="34.0" prefWidth="152.0" text="Insurance Option 2">
+               <font>
+                  <Font name="Cambria" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="desc2" alignment="TOP_LEFT" layoutX="15.0" layoutY="143.0" prefHeight="63.0" prefWidth="158.0" text="Description: fyedg fcdgyh" wrapText="true">
+               <font>
+                  <Font name="Cambria" size="15.0" />
+               </font>
+            </Label>
+            <Button fx:id="cbtn" layoutX="36.0" layoutY="218.0" mnemonicParsing="false" onAction="#goToHome" prefHeight="34.0" prefWidth="117.0" style="-fx-background-color: #3A808C;" text="Choose" textFill="WHITE">
+               <font>
+                  <Font name="Cambria" size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

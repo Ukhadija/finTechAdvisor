@@ -8,30 +8,50 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.FeedbackController">
+<AnchorPane prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ReccInsuranceController">
    <children>
-      <Label contentDisplay="CENTER" layoutX="117.0" layoutY="75.0" prefHeight="63.0" prefWidth="267.0" text="Provide Feedback" textAlignment="RIGHT">
+      <Label contentDisplay="CENTER" layoutX="112.0" layoutY="100.0" prefHeight="63.0" prefWidth="276.0" text="Recommend Insurance " textAlignment="RIGHT">
          <font>
-            <Font name="Cambria Bold" size="32.0" />
+            <Font name="Cambria Bold" size="24.0" />
          </font>
       </Label>
-      <HBox prefHeight="63.0" prefWidth="500.0" style="-fx-background-color: #12C1E0;">
+      <HBox prefHeight="89.0" prefWidth="500.0" style="-fx-background-color: #12C1E0;">
          <children>
-            <AnchorPane prefHeight="200.0" prefWidth="200.0" />
-            <AnchorPane prefHeight="200.0" prefWidth="200.0" />
-            <AnchorPane prefHeight="200.0" prefWidth="200.0" />
+            <AnchorPane prefHeight="89.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="63.0" fitWidth="173.0" layoutX="22.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="file:/C:/Users/Zinoor%20Fatima/eclipse-workspace/FinTechAdvise%20Java/finTechAdvisor/Resources/images/logo.png" />
+                     </image>
+                  </ImageView>
+               </children></AnchorPane>
+            <AnchorPane prefHeight="89.0" prefWidth="111.0" />
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="backbtn" layoutX="99.0" layoutY="34.0" mnemonicParsing="false" onAction="#goToUserAccount" prefHeight="21.0" prefWidth="82.0" style="-fx-background-color: #fbeae6;" text="Back">
+                     <font>
+                        <Font name="Cambria" size="18.0" />
+                     </font>
+                  </Button>
+               </children></AnchorPane>
          </children>
       </HBox>
-      <Button fx:id="nbtn" layoutX="339.0" layoutY="302.0" mnemonicParsing="false" onAction="#goToHome" prefHeight="22.0" prefWidth="91.0" text="Next">
-         <font>
-            <Font name="Cambria" size="18.0" />
-         </font>
-      </Button>
-      <Label layoutX="43.0" layoutY="152.0" prefHeight="21.0" prefWidth="387.0" text="Provide your feedback in the box below ">
+      <Label layoutX="65.0" layoutY="185.0" text="Insurance Need">
          <font>
             <Font name="Cambria" size="18.0" />
          </font>
       </Label>
-      <TextField layoutX="43.0" layoutY="188.0" prefHeight="101.0" prefWidth="387.0" />
+      <TextField fx:id="needtext" layoutX="62.0" layoutY="216.0" prefHeight="47.0" prefWidth="376.0" promptText="Enter Insurance Need" />
+      <Button fx:id="rbtn" layoutX="340.0" layoutY="380.0" mnemonicParsing="false" onAction="#goToInsuranceOptions" prefHeight="34.0" prefWidth="98.0" text="Recommend">
+         <font>
+            <Font name="Cambria" size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="65.0" layoutY="281.0" text="Insurance Preference">
+         <font>
+            <Font name="Cambria" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="preferencetext" layoutX="62.0" layoutY="311.0" prefHeight="47.0" prefWidth="376.0" promptText="Enter Insurance Preference" />
    </children>
 </AnchorPane>
