@@ -25,7 +25,7 @@
             <Font name="Cambria" size="18.0" />
          </font>
       </Button>
-      <Button layoutX="297.0" layoutY="358.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="151.0" text="Delete Goals">
+      <Button fx:id="del1" layoutX="297.0" layoutY="358.0" mnemonicParsing="false" onAction="#deletepage" prefHeight="35.0" prefWidth="151.0" text="Delete Goals">
          <font>
             <Font name="Cambria" size="18.0" />
          </font>

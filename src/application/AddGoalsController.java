@@ -3,12 +3,15 @@ package application;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
+import javafx.scene.Parent;
 import javafx.scene.control.Button;
 
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
+import java.io.File;
 import java.io.IOException;
+import java.net.URL;
 import java.time.LocalDate;
 import java.util.Date;
 
@@ -56,10 +59,23 @@ public class AddGoalsController {
 		{
 			
 		System.out.println("COMMING");
-		FXMLLoader loader = new FXMLLoader(getClass().getResource("resources/fxml/FinanicialGoals.fxml"));
-		FinancialGoalsController controller = new FinancialGoalsController(new_obj);
-		loader.setController(controller);
+//		FXMLLoader loader = new FXMLLoader(getClass().getResource("resources/fxml/FinanicialGoals.fxml"));
+//		FinancialGoalsController controller = new FinancialGoalsController(new_obj);
+//		loader.setController(controller);
 		
+		
+		File fxmlFile = new File("resources/fxml/FinancialGoals.fxml");
+		FXMLLoader loader = new FXMLLoader(fxmlFile.toURI().toURL());
+		Parent root = loader.load();
+
+		// Retrieve the controller instance
+		FinancialGoalsController financialController = loader.getController();
+		financialController.data(new_obj);
+
+		// Pass the new_obj to the controller
+		//financialController.data(new_obj);
+
+
     	Stage s = (Stage) ((Node)event.getSource()).getScene().getWindow();
     	m.changeScene(s, "resources/fxml/FinancialGoals.fxml");
     	

@@ -21,6 +21,14 @@ public class FinanicialGoals {
         this.number = number;
         this.choice = choice;
     }
+    
+    
+    @Override
+    public String toString() {
+    	return number + " " + goal + "  " + date + " " + status;
+    
+    }
+    
 	
     public void setFinancialGoals(String g, Date d, String s,String c,int n) {
     	System.out.println("COMES ");	
@@ -36,13 +44,21 @@ public class FinanicialGoals {
     	
     	if(c.equals("Delete"))
     	{
-    		if(n==number)
-    		{
+    		System.out.println("Deleting ");
+
+    		//if(n==number)
+    	//	{
+
     			g="";
     			d=null;
     			s="";
     			
-    		}
+    		//}
+    		
+    		System.out.println("Goal "+g);
+    		System.out.println("date "+d);
+    		System.out.println("Status "+s);
+    		
     		
     	}
     	
