@@ -47,7 +47,7 @@ public class UserAccountController {
     void Logout(ActionEvent event) throws IOException {
     	System.out.println("Back link clicked");
     	Stage s = (Stage) ((Node)event.getSource()).getScene().getWindow();
-    	//m.changeScene(s, "resources/fxml/Home.fxml");
+    	m.changeScene(s, "resources/fxml/Home.fxml");
     }
     
     @FXML

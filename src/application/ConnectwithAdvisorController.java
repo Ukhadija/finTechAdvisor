@@ -35,7 +35,7 @@ public class ConnectwithAdvisorController {
     void goToUserAccount(ActionEvent event)throws IOException {
     	System.out.println("Home button clicked");
     	Stage s = (Stage) ((Node)event.getSource()).getScene().getWindow();
-    	m.changeScene(s, "resources/fxml/UserAccount.fxml");
+    	m.changeScene(s, "resources/fxml/UserAccount2_.fxml");
     }
 
     @FXML
