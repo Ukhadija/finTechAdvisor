@@ -16,20 +16,6 @@
             <Font name="Cambria Bold" size="24.0" />
          </font>
       </Label>
-      <HBox prefHeight="63.0" prefWidth="500.0" style="-fx-background-color: #12C1E0;">
-         <children>
-            <AnchorPane prefHeight="200.0" prefWidth="200.0" />
-            <AnchorPane prefHeight="200.0" prefWidth="200.0" />
-            <AnchorPane prefHeight="200.0" prefWidth="200.0">
-               <children>
-                  <Button fx:id="backbtn" layoutX="51.0" layoutY="15.0" mnemonicParsing="false" onAction="#goToHome" prefHeight="22.0" prefWidth="91.0" text="Back">
-                     <font>
-                        <Font name="Cambria" size="18.0" />
-                     </font>
-                  </Button>
-               </children></AnchorPane>
-         </children>
-      </HBox>
       <Button fx:id="PrevBtn" layoutX="218.0" layoutY="455.0" mnemonicParsing="false" onAction="#goToPrevPage" prefHeight="31.0" prefWidth="64.0" style="-fx-background-color: #E0A212;" text="Prev" textFill="WHITE" />
       <AnchorPane layoutX="35.0" layoutY="137.0" prefHeight="140.0" prefWidth="132.0" style="-fx-background-color: #fbeae6;">
          <children>
@@ -87,5 +73,28 @@
             </Hyperlink>
          </children>
       </AnchorPane>
+      <HBox prefHeight="79.0" prefWidth="500.0" style="-fx-background-color: #12C1E0;">
+         <children>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="63.0" fitWidth="151.0" layoutX="20.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="file:/C:/Users/Zinoor%20Fatima/eclipse-workspace/FinTechAdvise%20Java/finTechAdvisor/Resources/images/logo.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="79.0" prefWidth="146.0" />
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="backbtn" layoutX="69.0" layoutY="31.0" mnemonicParsing="false" onAction="#goToHome" prefHeight="22.0" prefWidth="91.0" text="Back">
+                     <font>
+                        <Font name="Cambria" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
    </children>
 </AnchorPane>
