@@ -96,7 +96,7 @@ public class FinTechAdvisor {
 		
 		Account acc =  new Account(user, pass);
 		
-		BankAccount Bacc = new BankAccount("Rawalpindi", "Faysal");
+		BankAccount Bacc = new BankAccount("Rawalpindi", "Faysal",90000);
 		Customer Customer = new Customer(name, address,phone, email ,cnic,user, pass,Bacc);
 		
 	}

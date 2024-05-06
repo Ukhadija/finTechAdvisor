@@ -19,7 +19,7 @@ public class BankAccount {
 	//private ArrayList<Log> transHistory;
 	
 	//constructor
-	BankAccount(  String branch, String BankName) 
+	public BankAccount(  String branch, String BankName,double balance) 
 	{
 		Random rand = new Random();
 		int min =1;
@@ -28,7 +28,7 @@ public class BankAccount {
 		accountNo = B + String.valueOf((int)(Math.random() * (max - min + 1) + min) );
 		min =487347;
 		max = 89989888;
-		this.balance = Math.random()  * (max - min + 1) + min  ;;
+		this.balance = balance;;
 		this.branch = branch;
 		this.accountNo = accountNo;
 		
@@ -43,7 +43,7 @@ public class BankAccount {
 //	}
 	}
 	//getter setter
-	double getBalance() {
+	public double getBalance() {
 		return this.balance;
 	}
 	
