@@ -7,7 +7,7 @@ public class Account {
 	{
 		
 	}
-	Account(String usr, String pass)
+	public Account(String usr, String pass)
 	{
 		Username = usr;
 		Password = pass;

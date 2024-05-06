@@ -34,7 +34,7 @@ public class Customer extends User{
 
 	}
 
-	Customer(String name, String address, String phone, String email,
+	public Customer(String name, String address, String phone, String email,
 
 			String cnic, String Username, String pass, BankAccount Bacc)
 
@@ -236,6 +236,26 @@ public class Customer extends User{
 
 		this.customerID = customerID;
 
+	}
+	
+	public String advise(float income, float expenses) {
+		System.out.println("Comes");
+	    if (income > expenses) {
+	        float savings = income - expenses;
+	        if (savings > 0) {
+	            if (savings <= 100) {
+	                return "You can save some money by reducing unnecessary expenses.";
+	            } else if (savings <= 500) {
+	                return "Consider saving more by cutting down on dining out and entertainment expenses.";
+	            } else {
+	                return "You're doing well in saving! Keep it up and consider investing your savings for better returns.";
+	            }
+	        } else {
+	            return "You're spending as much as or more than you're earning. Consider budgeting and cutting down on non-essential expenses.";
+	        }
+	    } else {
+	        return "You're spending more than you're earning. Consider finding ways to increase your income or reducing your expenses.";
+	    }
 	}
 
 

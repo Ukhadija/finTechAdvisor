@@ -84,7 +84,7 @@ public class UserAccountController {
     void goToFinancialAdvice(ActionEvent event) throws IOException {
     	System.out.println("Register Parcel link clicked");
     	Stage s = (Stage) ((Node)event.getSource()).getScene().getWindow();
-    	m.changeScene(s, "resources/fxml/FinancialAdvice.fxml");
+    	m.changeScene(s, "resources/fxml/financialadviceform.fxml");
     	//change resgiater
     }
 

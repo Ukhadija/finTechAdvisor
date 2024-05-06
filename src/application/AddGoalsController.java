@@ -24,6 +24,8 @@ public class AddGoalsController {
 	@FXML
 	private Button add1;
 	@FXML
+	private Button back1;
+	@FXML
 	private TextField textfield;
 	@FXML
 	private DatePicker date1;
@@ -110,6 +112,14 @@ public class AddGoalsController {
             System.out.println("empty");
         }
 		
+	}
+	
+	@FXML
+	public void back(ActionEvent event) throws IOException {
+    	System.out.println("Register Parcel link clicked");
+    	Stage s = (Stage) ((Node)event.getSource()).getScene().getWindow();
+    	m.changeScene(s, "resources/fxml/UserAccount.fxml");
+
 	}
 	
 	
