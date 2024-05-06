@@ -144,7 +144,7 @@ public class UserAccountController {
     void goToInvStrategy(ActionEvent event) throws IOException {
     	System.out.println("Order Supplies link clicked");
     	Stage s = (Stage) ((Node)event.getSource()).getScene().getWindow();
-    	m.changeScene(s, "resources/fxml/InvStrategy.fxml");
+    	m.changeScene(s, "resources/fxml/InvestmentStrategy.fxml");
     	//change fjriojgior
     }
 

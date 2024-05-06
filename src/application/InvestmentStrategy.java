@@ -45,7 +45,30 @@ public class InvestmentStrategy {
     
     @FXML
     void CalculateStrategy(ActionEvent event) throws IOException{
-    	
+    	this.StrategyText.setText("Balanced Portfolio Approach\"\r\n"
+    			+ "Objective: To achieve long-term growth while managing risk through a diversified investment portfolio.\r\n"
+    			+ "\r\n"
+    			+ "Strategy Components:\r\n"
+    			+ "\r\n"
+    			+ "Asset Allocation:\r\n"
+    			+ "Allocate funds across different asset classes based on risk tolerance and investment horizon.\r\n"
+    			+ "Example allocation:\r\n"
+    			+ "60% Equities (Stocks): Invest in a mix of large-cap, mid-cap, and small-cap stocks across various sectors.\r\n"
+    			+ "30% Fixed Income (Bonds): Include government bonds, corporate bonds, and high-quality municipal bonds for income and stability.\r\n"
+    			+ "10% Alternative Investments: Allocate a small portion to alternative assets like real estate investment trusts (REITs), commodities, or alternative strategies (e.g., managed futures).\r\n"
+    			+ "Diversification:\r\n"
+    			+ "Within each asset class, diversify holdings to reduce concentration risk.\r\n"
+    			+ "For equities, diversify across industries and geographic regions.\r\n"
+    			+ "For fixed income, diversify across different bond types and maturities.\r\n"
+    			+ "Rebalancing:\r\n"
+    			+ "Regularly rebalance the portfolio to maintain target asset allocations.\r\n"
+    			+ "Rebalancing involves selling overweighted assets and buying underweighted assets to bring the portfolio back in line with the target allocation.\r\n"
+    			+ "Risk Management:\r\n"
+    			+ "Incorporate risk management techniques such as setting stop-loss orders for individual stocks or using asset allocation to control overall portfolio risk.\r\n"
+    			+ "Use asset classes with low correlation to reduce portfolio volatility.\r\n"
+    			+ "Long-Term Perspective:\r\n"
+    			+ "Maintain a long-term investment horizon to benefit from compounding returns and ride out market fluctuations.\r\n"
+    			+ "Avoid reactionary decisions based on short-term market movements.");
     	
     }
     
