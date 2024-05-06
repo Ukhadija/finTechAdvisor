@@ -12,6 +12,10 @@ import java.io.*;
 
 public class ResourceDetailsController {
 	Main m = new Main();
+	
+	String Name= "Rseource Name!";
+	String Description = "Description: ";
+	String Imagepath = "file:/C:/Users/Zinoor%20Fatima/Pictures/Canon%20pictures/IMG_4716.JPG";
 
     @FXML
     private Button backbtn;
@@ -28,8 +32,18 @@ public class ResourceDetailsController {
     public ResourceDetailsController() {
     	
     }
-    public void intialize() {
+    public void initialize() {
     	
+    }
+    
+    void setAttributes(String name, String description, String path) {
+    	Name = name;
+    	Description += description;
+    	Imagepath = path;
+    	
+    	resourcename.setText(Name);
+    	desc.setText(Description);
+        rimage.setImage(new javafx.scene.image.Image(Imagepath));
     }
 
     @FXML

@@ -41,9 +41,14 @@ public class ReccInsuranceController {
 
     @FXML
     void goToInsuranceOptions(ActionEvent event) throws IOException {
-    	System.out.println("Recommend Button clicked");
-    	Stage s = (Stage) ((Node)event.getSource()).getScene().getWindow();
-    	m.changeScene(s, "resources/fxml/InsuranceOption.fxml");
+    	String need = needtext.getText();
+    	String preference = preferencetext.getText();
+    	
+    	if( !need.isEmpty() && !preference.isEmpty()) {
+	    	System.out.println("Recommend Button clicked");
+	    	Stage s = (Stage) ((Node)event.getSource()).getScene().getWindow();
+	    	m.changeScene(s, "resources/fxml/InsuranceOption.fxml");
+    	}
     }
 
 }

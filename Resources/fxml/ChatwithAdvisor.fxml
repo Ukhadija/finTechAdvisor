@@ -8,27 +8,27 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.CustomerServiceController">
+<AnchorPane prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ChatwithAdvisorController">
    <children>
-      <Label contentDisplay="CENTER" layoutX="112.0" layoutY="100.0" prefHeight="63.0" prefWidth="276.0" text="Customer Service" textAlignment="RIGHT">
+      <Label fx:id="Label1" alignment="CENTER" contentDisplay="CENTER" layoutX="49.0" layoutY="105.0" prefHeight="63.0" prefWidth="402.0" text="Chat with Advisor" textAlignment="RIGHT">
          <font>
-            <Font name="Cambria Bold" size="32.0" />
+            <Font name="Cambria Bold" size="24.0" />
          </font>
       </Label>
-      <HBox prefHeight="88.0" prefWidth="500.0" style="-fx-background-color: #12C1E0;">
+      <HBox prefHeight="95.0" prefWidth="500.0" style="-fx-background-color: #12C1E0;">
          <children>
             <AnchorPane prefHeight="200.0" prefWidth="200.0">
                <children>
-                  <ImageView fitHeight="69.0" fitWidth="166.0" layoutX="12.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="82.0" fitWidth="163.0" layoutX="15.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="file:/C:/Users/Zinoor%20Fatima/eclipse-workspace/FinTechAdvise%20Java/finTechAdvisor/Resources/images/logo.png" />
                      </image>
                   </ImageView>
                </children></AnchorPane>
-            <AnchorPane prefHeight="88.0" prefWidth="130.0" />
+            <AnchorPane prefHeight="95.0" prefWidth="120.0" />
             <AnchorPane prefHeight="200.0" prefWidth="200.0">
                <children>
-                  <Button fx:id="hbtn" layoutX="88.0" layoutY="34.0" mnemonicParsing="false" onAction="#goToUserAccount" prefHeight="21.0" prefWidth="82.0" style="-fx-background-color: #fbeae6;" text="Back">
+                  <Button fx:id="hbtn" layoutX="89.0" layoutY="38.0" mnemonicParsing="false" onAction="#goToFindAdvisor" prefHeight="21.0" prefWidth="82.0" style="-fx-background-color: #fbeae6;" text="Back">
                      <font>
                         <Font name="Cambria" size="18.0" />
                      </font>
@@ -36,22 +36,17 @@
                </children></AnchorPane>
          </children>
       </HBox>
-      <Label layoutX="65.0" layoutY="185.0" text="Enter Query">
+      <Label layoutX="65.0" layoutY="185.0" text="Enter Message">
          <font>
             <Font name="Cambria" size="18.0" />
          </font>
       </Label>
-      <TextField fx:id="qtxt" layoutX="62.0" layoutY="216.0" prefHeight="47.0" prefWidth="376.0" promptText="Enter Query" />
+      <TextField fx:id="qtxt" layoutX="62.0" layoutY="216.0" prefHeight="47.0" prefWidth="376.0" promptText="Enter Message" />
       <Button fx:id="sbtn" layoutX="341.0" layoutY="279.0" mnemonicParsing="false" onAction="#activateService" prefHeight="34.0" prefWidth="94.0" text="Send">
          <font>
             <Font name="Cambria" size="18.0" />
          </font>
       </Button>
-      <TextArea fx:id="tArea" layoutX="62.0" layoutY="333.0" prefHeight="131.0" prefWidth="376.0" promptText="Your response will appear here" wrapText="true" />
-      <Label layoutX="159.0" layoutY="185.0" text="*" textFill="#ff0b0b">
-         <font>
-            <Font name="Cambria" size="18.0" />
-         </font>
-      </Label>
+      <TextArea fx:id="tArea" layoutX="62.0" layoutY="333.0" prefHeight="131.0" prefWidth="376.0" promptText="Your advisor's advice will appear here" />
    </children>
 </AnchorPane>

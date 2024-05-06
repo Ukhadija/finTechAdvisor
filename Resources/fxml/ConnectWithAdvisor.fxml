@@ -10,9 +10,9 @@
 
 <AnchorPane prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ConnectwithAdvisorController">
    <children>
-      <Label contentDisplay="CENTER" layoutX="112.0" layoutY="100.0" prefHeight="63.0" prefWidth="276.0" text="Chat with Advisor" textAlignment="RIGHT">
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="112.0" layoutY="100.0" prefHeight="41.0" prefWidth="276.0" text="Find Advisor" textAlignment="CENTER">
          <font>
-            <Font name="Cambria Bold" size="32.0" />
+            <Font name="Cambria Bold" size="24.0" />
          </font>
       </Label>
       <HBox prefHeight="95.0" prefWidth="500.0" style="-fx-background-color: #12C1E0;">
@@ -36,17 +36,100 @@
                </children></AnchorPane>
          </children>
       </HBox>
-      <Label layoutX="65.0" layoutY="185.0" text="Enter Message">
-         <font>
-            <Font name="Cambria" size="18.0" />
-         </font>
-      </Label>
-      <TextField fx:id="qtxt" layoutX="62.0" layoutY="216.0" prefHeight="47.0" prefWidth="376.0" promptText="Enter Message" />
-      <Button fx:id="sbtn" layoutX="341.0" layoutY="279.0" mnemonicParsing="false" onAction="#activateService" prefHeight="34.0" prefWidth="94.0" text="Send">
-         <font>
-            <Font name="Cambria" size="18.0" />
-         </font>
-      </Button>
-      <TextArea fx:id="tArea" layoutX="62.0" layoutY="333.0" prefHeight="131.0" prefWidth="376.0" promptText="Your advisor's advice will appear here" />
+      <AnchorPane layoutX="14.0" layoutY="149.0" prefHeight="165.0" prefWidth="138.0" style="-fx-background-color: #fbeae6;">
+         <children>
+            <ImageView fx:id="Image1" fitHeight="95.0" fitWidth="158.0" layoutX="22.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:/C:/Users/Zinoor%20Fatima/eclipse-workspace/FinTechAdvise%20Java/finTechAdvisor/Resources/images/Advisor1.jpg" />
+               </image>
+            </ImageView>
+            <Label fx:id="name1" alignment="CENTER" contentDisplay="CENTER" layoutX="8.0" layoutY="109.0" prefHeight="20.0" prefWidth="122.0" text="Advisor Name">
+               <font>
+                  <Font name="Cambria" size="12.0" />
+               </font>
+            </Label>
+            <Button fx:id="chatbtn1" layoutX="32.0" layoutY="129.0" mnemonicParsing="false" onAction="#goToChatAdvisor" prefHeight="4.0" prefWidth="75.0" style="-fx-background-color: #3A808C;" text="Chat" textFill="WHITE">
+               <font>
+                  <Font name="Cambria" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="181.0" layoutY="149.0" prefHeight="165.0" prefWidth="138.0" style="-fx-background-color: #fbeae6;">
+         <children>
+            <ImageView fx:id="Image2" fitHeight="95.0" fitWidth="158.0" layoutX="22.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:/C:/Users/Zinoor%20Fatima/eclipse-workspace/FinTechAdvise%20Java/finTechAdvisor/Resources/images/Advisor1.jpg" />
+               </image>
+            </ImageView>
+            <Label fx:id="name2" alignment="CENTER" contentDisplay="CENTER" layoutX="8.0" layoutY="109.0" prefHeight="20.0" prefWidth="122.0" text="Advisor Name">
+               <font>
+                  <Font name="Cambria" size="12.0" />
+               </font>
+            </Label>
+            <Button fx:id="chatbtn2" layoutX="32.0" layoutY="129.0" mnemonicParsing="false" onAction="#goToChatAdvisor" prefHeight="4.0" prefWidth="75.0" style="-fx-background-color: #3A808C;" text="Chat" textFill="WHITE">
+               <font>
+                  <Font name="Cambria" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="348.0" layoutY="149.0" prefHeight="165.0" prefWidth="138.0" style="-fx-background-color: #fbeae6;">
+         <children>
+            <ImageView fx:id="Image3" fitHeight="95.0" fitWidth="158.0" layoutX="22.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:/C:/Users/Zinoor%20Fatima/eclipse-workspace/FinTechAdvise%20Java/finTechAdvisor/Resources/images/Advisor1.jpg" />
+               </image>
+            </ImageView>
+            <Label fx:id="name3" alignment="CENTER" contentDisplay="CENTER" layoutX="8.0" layoutY="109.0" prefHeight="20.0" prefWidth="122.0" text="Advisor Name">
+               <font>
+                  <Font name="Cambria" size="12.0" />
+               </font>
+            </Label>
+            <Button fx:id="chatbtn3" layoutX="32.0" layoutY="129.0" mnemonicParsing="false" onAction="#goToChatAdvisor" prefHeight="4.0" prefWidth="75.0" style="-fx-background-color: #3A808C;" text="Chat" textFill="WHITE">
+               <font>
+                  <Font name="Cambria" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="96.0" layoutY="321.0" prefHeight="165.0" prefWidth="138.0" style="-fx-background-color: #fbeae6;">
+         <children>
+            <ImageView fx:id="Image4" fitHeight="95.0" fitWidth="158.0" layoutX="22.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:/C:/Users/Zinoor%20Fatima/eclipse-workspace/FinTechAdvise%20Java/finTechAdvisor/Resources/images/Advisor1.jpg" />
+               </image>
+            </ImageView>
+            <Label fx:id="name4" alignment="CENTER" contentDisplay="CENTER" layoutX="8.0" layoutY="109.0" prefHeight="20.0" prefWidth="122.0" text="Advisor Name">
+               <font>
+                  <Font name="Cambria" size="12.0" />
+               </font>
+            </Label>
+            <Button fx:id="chatbtn4" layoutX="32.0" layoutY="129.0" mnemonicParsing="false" onAction="#goToChatAdvisor" prefHeight="4.0" prefWidth="75.0" style="-fx-background-color: #3A808C;" text="Chat" textFill="WHITE">
+               <font>
+                  <Font name="Cambria" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="270.0" layoutY="321.0" prefHeight="165.0" prefWidth="138.0" style="-fx-background-color: #fbeae6;">
+         <children>
+            <ImageView fx:id="Image5" fitHeight="95.0" fitWidth="158.0" layoutX="22.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:/C:/Users/Zinoor%20Fatima/eclipse-workspace/FinTechAdvise%20Java/finTechAdvisor/Resources/images/Advisor1.jpg" />
+               </image>
+            </ImageView>
+            <Label fx:id="name5" alignment="CENTER" contentDisplay="CENTER" layoutX="8.0" layoutY="109.0" prefHeight="20.0" prefWidth="122.0" text="Advisor Name">
+               <font>
+                  <Font name="Cambria" size="12.0" />
+               </font>
+            </Label>
+            <Button fx:id="chatbtn5" layoutX="32.0" layoutY="129.0" mnemonicParsing="false" onAction="#goToChatAdvisor" prefHeight="4.0" prefWidth="75.0" style="-fx-background-color: #3A808C;" text="Chat" textFill="WHITE">
+               <font>
+                  <Font name="Cambria" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
    </children>
 </AnchorPane>
