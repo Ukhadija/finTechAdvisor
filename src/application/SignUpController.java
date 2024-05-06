@@ -47,6 +47,9 @@ public class SignUpController {
 
     @FXML
     private Button btn;
+    
+    @FXML
+    private Button add;
 
     @FXML
     private TextField utxt;
@@ -111,6 +114,13 @@ public class SignUpController {
     	System.out.println("Back link clicked");
     	Stage s = (Stage) ((Node)event.getSource()).getScene().getWindow();
     	m.changeScene(s, "resources/fxml/Home.fxml");
+    }
+    
+    @FXML
+    void AddCard(ActionEvent event)throws IOException {
+    	System.out.println("Back link clicked");
+    	Stage s = (Stage) ((Node)event.getSource()).getScene().getWindow();
+    	m.changeScene(s, "resources/fxml/Payments.fxml");
     }
 
 }

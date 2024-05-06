@@ -1,8 +1,6 @@
 package finTechAdvisor;
 
 import java.util.List;
-import java.sql.SQLException;
-import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.Scanner;
@@ -14,7 +12,7 @@ public class CustomerService extends User{
 	{
 		super();
 	}
-	public CustomerService(String ID,String name, String address, String phone, String email, String cnic,String user, String pass) throws SQLException {
+	public CustomerService(String ID,String name, String address, String phone, String email, String cnic,String user, String pass){
 		super(name, address, phone, email, cnic,user, pass );
 		// TODO Auto-generated constructor stub
 		CustomerServiceID = ID;
