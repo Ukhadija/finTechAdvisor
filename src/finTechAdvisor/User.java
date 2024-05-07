@@ -1,4 +1,7 @@
 package finTechAdvisor;
+
+
+
 public abstract class User {
 	private String Name;
 	private String Address;
@@ -23,7 +26,7 @@ public abstract class User {
 		this.setAcc(user.getAcc());
 	}
 	
-	public User(String name, String address, String phone, String email, String cnic, String Username, String pass) 
+	public User(String name, String address, String phone, String email, String cnic, String Username, String pass)
 	{
 		setName(name);
 		setAddress(address);
@@ -32,17 +35,16 @@ public abstract class User {
 		setCNIC(cnic); 
 		setAcc(new Account(Username, pass));
 		
-		/*MySqlHandler sql = new MySqlHandler();
-		Statement stmt = sql.getStmt();
-		
-		//execute query
-		String query = "Insert into User_(FullName, Address, Phone, Email,CNIC, Username, Pass)\r\n"
-				+ "	VALUES ('" + name +"','" + address +"','" + phone+"','" + email+"','" 
-				+CNIC+"','" + Username+"','"+pass+ "' );";
-		System.out.println(query);
-		
-		stmt.executeUpdate(query); //execute the insertion
-		*/
+//		MySqlHandler sql = new MySqlHandler();
+//		Statement stmt = sql.getStmt();
+//		
+//		//execute query
+//		String query = "Insert into User_(FullName, Address, Phone, Email,CNIC, Username, Pass)\r\n"
+//				+ "	VALUES ('" + name +"','" + address +"','" + phone+"','" + email+"','" 
+//				+CNIC+"','" + Username+"','"+pass+ "' );";
+//		System.out.println(query);
+//		
+//		stmt.executeUpdate(query); //execute the insertion
 	}
 	
 	public User(String name, String address, String phone, String email, String cnic, Account a)
@@ -103,6 +105,9 @@ public abstract class User {
 	public void setAcc(Account acc) {
 		this.acc = acc;
 	}
+	
+
+
 	
 	
 	

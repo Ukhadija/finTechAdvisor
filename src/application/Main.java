@@ -45,6 +45,46 @@ public class Main extends Application {
 		currentStage.setScene(scene);
 		currentStage.show();
 	}
+	
+	public void changeScenewithString(Stage currentStage, String fxmlDocPath, String s) throws IOException{
+		FileInputStream fxmlStream = new FileInputStream(fxmlDocPath);
+		AnchorPane root = (AnchorPane)loader.load(fxmlStream);
+		
+		ShowInvestmentRangeController IVR = loader.getController();
+		IVR.settxt(s);	
+		Scene scene = new Scene(root,500,500);
+		//scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+		currentStage.setScene(scene);
+		currentStage.show();
+	}
+	
+	public void changeScenewithParameter(Stage currentStage, String fxmlDocPath, String advisorName) throws IOException{
+		FileInputStream fxmlStream = new FileInputStream(fxmlDocPath);
+		AnchorPane root = (AnchorPane)loader.load(fxmlStream);
+		
+		ChatwithAdvisorController chatcontroller = loader.getController();
+		
+		chatcontroller.setAdvisorName(advisorName);
+		
+		Scene scene = new Scene(root,500,500);
+		//scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+		currentStage.setScene(scene);
+		currentStage.show();
+	}
+	
+	public void changeSceneToDescription(Stage currentStage, String fxmlDocPath, String name, String desc, String path) throws IOException{
+		FileInputStream fxmlStream = new FileInputStream(fxmlDocPath);
+		AnchorPane root = (AnchorPane)loader.load(fxmlStream);
+		
+		ResourceDetailsController rcontroller = loader.getController();
+		
+		rcontroller.setAttributes(name, desc, path);
+		
+		Scene scene = new Scene(root,500,500);
+		//scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+		currentStage.setScene(scene);
+		currentStage.show();
+	}
 	/*
 	public void changeScenewithParameter(Stage currentStage, String fxmlDocPath, Customer cus) throws IOException{
 		FileInputStream fxmlStream = new FileInputStream(fxmlDocPath);

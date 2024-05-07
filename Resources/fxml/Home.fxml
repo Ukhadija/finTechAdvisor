@@ -15,15 +15,19 @@
             <Font name="Ebrima Bold" size="37.0" />
          </font>
       </Label>
-      <HBox prefHeight="64.0" prefWidth="500.0" style="-fx-background-color: #12C1E0;">
+      <HBox prefHeight="58.0" prefWidth="500.0" style="-fx-background-color: #12C1E0;">
          <children>
             <AnchorPane prefHeight="75.0" prefWidth="150.0">
                <children>
-                  <ImageView fitHeight="85.0" fitWidth="203.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="85.0" fitWidth="209.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <!--Image url="@../assets/images/logo.jpg" /-->
                      </image>
                   </ImageView>
+                  <ImageView fitHeight="93.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="file:Resources/images/logo.png" />
+                     </image></ImageView>
                </children></AnchorPane>
             <AnchorPane prefHeight="200.0" prefWidth="200.0" />
          </children>

@@ -19,9 +19,9 @@
          <children>
             <AnchorPane prefHeight="200.0" prefWidth="200.0">
                <children>
-                  <ImageView fitHeight="100.0" fitWidth="184.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="100.0" fitWidth="184.0" layoutX="14.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="file:resources/images/logo.jpg" />
+                        <Image url="file:resources/images/logo.png" />
                      </image>
                   </ImageView>
                </children></AnchorPane>
@@ -40,7 +40,7 @@
          <children>
             <ImageView fitHeight="100.0" fitWidth="184.0" layoutX="40.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="file:resources/images/mail-box.png" />
+                  <Image url="file:resources/images/bell.png" />
                </image>
             </ImageView>
             <Button fx:id="Tbtn" layoutX="24.0" layoutY="101.0" mnemonicParsing="false" onAction="#goToDashboard" prefHeight="34.0" prefWidth="133.0" style="-fx-background-color: #3A808C;" text="Dashboard" textFill="WHITE">
@@ -54,7 +54,7 @@
          <children>
             <ImageView fitHeight="100.0" fitWidth="200.0" layoutX="40.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="file:resources/images/parcel.png" />
+                  <Image url="file:resources/images/favorite.png" />
                </image>
             </ImageView>
             <Button fx:id="rbtn" layoutX="18.0" layoutY="100.0" mnemonicParsing="false" onAction="#goToFinancialAdvice" prefHeight="35.0" prefWidth="145.0" style="-fx-background-color: #3A808C;" text="Financial Advice" textFill="WHITE">
@@ -73,7 +73,7 @@
             </Button>
             <ImageView fitHeight="100.0" fitWidth="202.0" layoutX="34.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="file:resources/images/inventory.png" />
+                  <Image url="file:resources/images/plane.png" />
                </image>
             </ImageView>
          </children>
@@ -87,7 +87,7 @@
             </Button>
             <ImageView fitHeight="100.0" fitWidth="94.0" layoutX="45.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="file:resources/images/customer-service.png" />
+                  <Image url="file:resources/images/account.png" />
                </image>
             </ImageView>
          </children>

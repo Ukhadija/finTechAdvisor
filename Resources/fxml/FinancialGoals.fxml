@@ -1,37 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.image.*?>
-<?import javafx.scene.text.*?>
-<?import javafx.scene.shape.*?>
 <?import java.lang.*?>
 <?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.FeedbackController">
+<AnchorPane prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.FinancialGoalsController">
    <children>
-      <Label contentDisplay="CENTER" layoutX="117.0" layoutY="75.0" prefHeight="63.0" prefWidth="267.0" text="Provide Feedback" textAlignment="RIGHT">
+      <Label contentDisplay="CENTER" layoutX="117.0" layoutY="75.0" prefHeight="63.0" prefWidth="267.0" text="Financial Goals" textAlignment="RIGHT">
          <font>
             <Font name="Cambria Bold" size="32.0" />
          </font>
       </Label>
       <HBox prefHeight="63.0" prefWidth="500.0" style="-fx-background-color: #12C1E0;">
          <children>
-            <AnchorPane prefHeight="200.0" prefWidth="200.0" />
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="105.0" fitWidth="73.0" layoutX="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="file:resources/images/logo.png" />
+                     </image>
+                  </ImageView>
+               </children></AnchorPane>
             <AnchorPane prefHeight="200.0" prefWidth="200.0" />
             <AnchorPane prefHeight="200.0" prefWidth="200.0" />
          </children>
       </HBox>
-      <Button fx:id="nbtn" layoutX="339.0" layoutY="302.0" mnemonicParsing="false" onAction="#goToHome" prefHeight="22.0" prefWidth="91.0" text="Next">
+      <Button fx:id="addinggoal" layoutX="55.0" layoutY="358.0" mnemonicParsing="false" onAction="#gotoaddgoalpage" prefHeight="35.0" prefWidth="151.0" text="Add Goals">
          <font>
             <Font name="Cambria" size="18.0" />
          </font>
       </Button>
-      <Label layoutX="43.0" layoutY="152.0" prefHeight="21.0" prefWidth="387.0" text="Provide your feedback in the box below ">
+      <Button fx:id="del1" layoutX="297.0" layoutY="358.0" mnemonicParsing="false" onAction="#deletepage" prefHeight="35.0" prefWidth="151.0" text="Delete Goals">
          <font>
             <Font name="Cambria" size="18.0" />
          </font>
-      </Label>
-      <TextField layoutX="43.0" layoutY="188.0" prefHeight="101.0" prefWidth="387.0" />
+      </Button>
+      <Button fx:id="backbutton" layoutX="195.0" layoutY="431.0" mnemonicParsing="false" onAction="#BackPage" prefHeight="35.0" prefWidth="100.0" text="Back">
+         <font>
+            <Font name="Cambria" size="18.0" />
+         </font>
+      </Button>
+      <Label fx:id="LABEL1" alignment="TOP_LEFT" layoutX="53.0" layoutY="144.0" onKeyPressed="#Action_view" prefHeight="124.0" prefWidth="399.0" text="Goals" />
    </children>
 </AnchorPane>

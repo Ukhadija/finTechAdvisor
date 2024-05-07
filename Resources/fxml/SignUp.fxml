@@ -68,6 +68,6 @@
             <Font name="Cambria" size="18.0" />
          </font>
       </Hyperlink>
-      <TextArea fx:id="tArea" layoutX="136.0" layoutY="428.0" prefHeight="30.0" prefWidth="200.0" />
+      <Button fx:id="add" layoutX="119.0" layoutY="424.0" mnemonicParsing="false" onAction="#AddCard" prefHeight="38.0" prefWidth="92.0" text="Add Card" />
    </children>
 </AnchorPane>
